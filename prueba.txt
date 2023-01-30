@@ -2,3 +2,4 @@ Hola mundo, buenos días bb
 q tal 
 first pull test 
 local -remoto
+remoto-local 
