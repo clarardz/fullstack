@@ -1,72 +1,197 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
      <head>
         <link rel="stylesheet" href="styles.css"/>
         <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>meowmeow</title>
     </head>
+
     <style>
-        body {
-        
-        background-color: pink; 
-    
-        text-align: center;
-        }
-        div {
-          padding: 10px;   
-          width: 30%;
-          font-family:  sans-serif; 
-          color:#B63F6D ; 
-          size: 5px; 
-          text-align: center;
-          margin: auto;
-        }
-        button {
-            width: 400px;
+
+    /*  button {
+        position: sticky;
+        top: 0;
+        width: 200px;
         font-family: futura; 
-        font-size: 30px;
-        color: pink;
+        font-size: 15px;
         border: 5px solid #ca4691;
         background-color: #f4bfdc;
         border-radius:60px;
         cursor: pointer;
-        padding: 25px; 
-    }
-  
+        padding: 10px;
+        }
+    */
+        *{
+            /* border: 2px solid black; */
+            margin: 0; 
+            padding: 0; 
+            
+        }
+
+        nav {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            position: fixed; 
+            top: 0; 
+        }
+
+        nav > ul {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 100%;
+        }
+
+        nav > ul > li {
+            font-family: futura; 
+            font-weight: bold;
+            color: pink;
+            margin: auto;
+            padding: auto;
+            display: block;
+        }
+
+        nav > ul > li:hover {
+            color:  #B63F6D;
+            cursor: pointer;
+        }
+
+        li > a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header{
+            height:500px;
+        }
+
+        body {  
+            background-color: pink;     
+            margin: 1; 
+            height: 1000px;
+        }
+
+            
+        h1{
+                
+            font-family: futura; 
+            color: white; 
+            text-align: center;
+            justify-content: center;
+            font-size: 350px;
+            margin-top: 200px; ;
+            position: sticky; 
+            top: 0px; 
      
-    </style>
+        }
+    
+       
         
+
+        .text {
+                
+            padding: 100px;  
+            width: 60%;
+            font-family:  sans-serif; 
+            color:#B63F6D ; 
+            font-size: 25px;
+            text-align:justify;
+            justify-content: center;
+            margin: 30px auto 15px auto; 
+            height: 700px; 
+
+        }
+
+        mark {background: #B63F6D; 
+        color: white; }
+        
+        .imgs {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            padding: 80px; 
+            gap: 80px; 
+            margin: 0px 0; 
+        }
+
+        .img {
+            border-radius: 30px;
+            width: 350px; 
+            height: 450px; 
+            object-fit: cover;
+        }
+
+       footer{
+            font-family: futura; 
+            color: white; 
+            text-align: center;
+            justify-content: center;
+            margin: 10px ; 
+            height: 150px; 
+          
+            
+       }     
+
+    
+    </style>
+
+        <nav>
+            <ul>
+                <li><a href="#text">About</a></li>
+                <li><a href="#imgs">Cute Cats</a></li>
+                <li><a href="https://img.memegenerator.net/instances/76457593.jpg" target="_blank">Don't click here</a></li>
+            </ul>
+        </nav>  
+
     <body>
-        <audio controls autoplay>
-            <source src="https://www.nyan.cat/music/original.mp3" type="audio/ogg">
-            <source src="https://www.nyan.cat/music/original.mp3" type="audio/mpeg">
-        </audio>
-            <font face="futura" color="white">
-            <hr>
-            <h1>meow meow meow meow</h1>
-          
-           <img src="https://media2.giphy.com/media/MWSRkVoNaC30A/giphy.gif?cid=ecf05e47ux0bf4veoe3q2t3kmj3reegy5kjz8txnhx79e3zj&rid=giphy.gif&ct=g" alt="cat gif">
-           
-            <div>
-
-                <p>Go into a room to decide <small>you didn't want to be in there anyway</small> be superior.Run outside as soon as door open what a <strong> <i> cat-ass-trophy!</i> </strong> 
-                meowing chowing and wowing meow meow mama head nudges and cats <del> for world domination.</del>
-                Stand with legs in litter box, but <ins> poop</ins> outside while happily ignoring when being called yet good morning sunshine mouse scratch at the door then walk away.
-                Push your water glass on the floor crusty butthole and chirp at birds for fight an alligator and win.
-                Sniff all the things nap all day there's a <mark>forty year old lady</mark> there let us feast thug cat a nice warm laptop for me to sit on or please stop looking at your phone and pet me but sniff catnip and act crazy.
-                Stare at ceiling toilet paper <em>attack</em> claws fluff everywhere meow miao french ciao litterbox look at dog <b> hiiiiiisssss</b>  </p>
-                <q>cats are cute</q> <br> - Probably someone 
-            </div>
-
-          
+        
+        <header>
+            <h1>meow</h1>
+        </header>
             
-            <hr>
-            
-            
+        <div class="text" id="text">
+                <p> <strong>Attention all you human servants.</strong> Let's face it, we cats run the show around here. Life as a feline is just pawsome! We nap, lounge, and groom all day, every day - and we do it with such panache, it's almost criminal.
+                    The treats, well, those are just the whipped cream on our already delectable lives. 
+                    Independence? More like inter-paws-dependence! 
+                    Sure, we might need you to open a can of tuna or refill our water bowl, but other than that, we're perfectly self-sufficient. 
+                    That being said, a good belly rub never hurt anyone <del> except maybe your arm from all that patting.</del>
+                    Playtime? It's like a daily cat-acomb of awesomeness! We hunt, we pounce, we conquer - and then we go back to napping because all that exertion can really take a lot out of a cat.
+                     So, human servants, listen up. We are the furr-ever fabulous overlords of this kingdom. Bow down, and show some respect to your feline rulers.
+                    <mark>Long live cats and their whisker-licious ways! </mark>
+                </p> 
+                <p> meowing chowing and wowing meow meow mama head nudges and cats  for world domination.
+                    Stand with legs in litter box, but <ins> poop</ins> outside while happily ignoring when being called yet good morning sunshine mouse scratch at the door then walk away.
+                    Push your water glass on the floor crusty butthole and chirp at birds for fight an alligator and win.
+                    Sniff all the things nap all day there's a forty year old lady there let us feast thug cat a nice warm laptop for me to sit on or please stop looking at your phone and pet me but sniff catnip and act crazy.
+                    Stare at ceiling toilet paper <em>attack</em> claws fluff everywhere meow miao french ciao litterbox look at dog <b> hiiiiiisssss</b> 
+                </p>
+        </div>
+        <hr>
+        <div class="imgs" id="imgs">
+            <img class="img"src="https://media2.giphy.com/media/MWSRkVoNaC30A/giphy.gif?cid=ecf05e47ux0bf4veoe3q2t3kmj3reegy5kjz8txnhx79e3zj&rid=giphy.gif&ct=g" alt="cat gif">
+            <img class="img"src="https://media.tenor.com/DsoPnpJIgfsAAAAd/cat-kitty.gif" alt="cat gif">
+            <img class="img"src="https://media3.giphy.com/media/fQ168fAHs5yA8/giphy.gif?cid=ecf05e4791q4n2j1653rqvzatwg0p42rdwytm10qrv110zty&rid=giphy.gif&ct=g" alt="cat gif">
+                   
+        </div>
+      
+    </body>         
+       
     <footer> 
-        <h2> 
-        <button><a href="https://img.memegenerator.net/instances/76457593.jpg" target="_blank" > <strong>Don't</strong> click here </a> </button> 
-    </h2>
+        <hr>
+        <p></p> <br>
+       
+        <p>Made by Clarita</p>
+       <!--
+        <audio controls autoplay>
+            <source src="https://www.nyan.cat/music/original.mp3" type="audio/mpeg">
+        </audio> 
+        -->
+    
 </footer>
-    </body> 
+    
 </html>
