@@ -1,0 +1,34 @@
+body{
+    height:1000px; 
+ background-color: lavenderblush;
+ margin-top: 5%;
+}
+
+h3{
+    color: purple; 
+    font-family: 
+}
+.text{
+    display: flex;
+    margin: 0 auto; 
+    width: 40%; 
+    text-align: center;
+}
+
+
+.tit{
+text-align: center;
+}
+
+.grande{
+    font-size: 100px;
+}
+div{
+    background-color: white;
+    width: 70%; 
+    margin-left: 15%;
+    height: 90%;
+    padding: 5px 0; 
+   
+ 
+}
