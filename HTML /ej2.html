@@ -11,25 +11,36 @@
         }
         body{
             margin: 0; 
-           background: linear-gradient(90deg,#00eabf 0%,#00f198 100%);
+           background: linear-gradient(90deg,#01f9cc 0%,#00e491 100%);
         }
-
-        .centrado img{
-            margin-left: 20px;
+        
+        .main-nav_item{
+            display:inline-block; 
         }
+        
+        .main-nav{
+            display:inline-block; 
+            width:100%; 
+            text-align: right;
+        }
+       
         .centrado{
-            
             margin: 0 auto; 
             text-align: center;
         }
-       ul{
-       padding: 0; 
-       }
+
+        header{
+            background-color: rgb(255, 255, 255, 0.6); 
+             padding: 20px 16px; 
+             width:100%; 
+        }
+       
         nav > ul {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             align-items: center;
+            padding: 0; 
             
         }
 
@@ -39,26 +50,32 @@
             display: block;
         }
 
-        nav > ul > li:hover {
+        li:hover {
             color:  white;
             cursor: pointer;
-        }
 
+        }
 
     </style>
 </head>
 <body>
-    <div class="centrado">
-        <header> 
-            <img  src="../IMG /imagin.png" alt="logo">
-        <nav>
-            <ul>
-                <li>Ser imaginer</li>
-                <li>Nuestro Compromiso</li>
-                <li>Ventajas</li>
-            </ul>
-        </nav>
+    <div class="centrado main-nav ">
+    <header class="main"> 
+        <div class="main-header">
+        <img  src="../IMG /imagin.png" alt="logo">
+        </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="main-nav_item">Ser imaginer</li>
+                    <li class="main-nav_item">Préstamos</li>
+                    <li class="main-nav_item">Área Cliente</li>
+                    <li class="main-nav_item">FAQ</li>
+                </ul>
+            </nav>
     </header>
-    </div>
+</div>
+<div>
+    
+</div>
 </body>
 </html>
