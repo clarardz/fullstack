@@ -1,4 +1,4 @@
-div{
+.container div{
     
     border: 4px solid black; 
     font-size: 6em;
@@ -8,10 +8,10 @@ div{
     border-radius: 5px;
   
 }
-body{
+.container {
     height: 800px; 
     display: flex; 
-    flex-direction: row; 
+    flex-direction: row-reverse; 
     align-items: flex-start;
     justify-content: center;
   
@@ -19,7 +19,7 @@ body{
 }
 
 #uno{
-    
+    flex-grow: 1;
 }
 #dos{
  
