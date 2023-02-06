@@ -11,15 +11,14 @@
 .container {
     height: 800px; 
     display: flex; 
-    flex-direction: row-reverse; 
-    align-items: flex-start;
-    justify-content: center;
-  
+    flex-direction:row; 
+   justify-content: space-between;
+   align-items: center ;
     
 }
 
 #uno{
-    flex-grow: 1;
+   
 }
 #dos{
  
